@@ -28,22 +28,6 @@ npm run build
 
 Produces `dist/JavaScript Notepad 1.0.0.exe` — a standalone portable executable (Electron + Node bundled inside).
 
-## Release chunks
+## Release
 
-The built exe is ~84 MB and is committed to git as 20 MB chunks (`release/*.part-*`) to stay well under GitHub's file size limit.
-
-Reassemble the exe:
-
-```powershell
-pwsh -File tools/reassemble.ps1
-```
-
-```bash
-bash tools/reassemble.sh
-```
-
-Re-create the chunks from a fresh build:
-
-```powershell
-pwsh -File tools/split-exe.ps1
-```
+The built portable exe is committed at `release/JavaScript Notepad 1.0.0.exe` (~84 MB). Download it from the repo and run it directly.
